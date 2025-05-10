@@ -11,7 +11,7 @@ class Lab:
 
         try:
             print("Connecting to database...")
-            return "TODO: Connect to database"
+            return sqlite3.connect('database.db')
         except Exception as e:
             print(f"Failed to connect to database, with Exception: {e}")
             return None
